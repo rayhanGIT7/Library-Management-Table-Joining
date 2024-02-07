@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Book_checkout extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'book_id',
+        'checkout_date',
+        'expected_return_date',
+        'return_date',
+    ];
+}
